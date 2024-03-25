@@ -97,7 +97,7 @@ async function postLogin(req, res) {
 function postLogOut(req, res) {
   req.session.user = null;
   req.session.isAuthenticated = false;
-  res.redirect("/");
+  res.redirect("/signup");
 }
 
 module.exports = { getSignUp, postSignUp, getLogin, postLogin, postLogOut };

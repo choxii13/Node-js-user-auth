@@ -5,7 +5,6 @@ const demoController = require("../controller/demo-controller");
 const guardRoutes = require("../middleware/user-auth-middlerware");
 
 router.use(guardRoutes);
-router.get("/", demoController.getHome);
 router.get("/admin", demoController.getAdmin);
 router.get("/profile", demoController.getProfile);
 // auth

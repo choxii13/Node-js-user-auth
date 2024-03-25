@@ -1,7 +1,3 @@
-function getHome(req, res) {
-  res.render("welcome");
-}
-
 async function getAdmin(req, res) {
   if (!res.locals.isAuth) {
     return res.status(401).render("401");
@@ -19,4 +15,4 @@ function getProfile(req, res) {
   res.render("profile");
 }
 
-module.exports = { getHome, getAdmin, getProfile };
+module.exports = { getAdmin, getProfile };

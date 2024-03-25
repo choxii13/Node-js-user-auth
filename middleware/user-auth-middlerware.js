@@ -10,6 +10,7 @@ async function guardRoutes(req, res, next) {
   const isAdmin = userDoc.isAdmin;
   res.locals.isAuth = isAuth;
   res.locals.isAdmin = isAdmin;
+  console.log()
   next();
 }
 
